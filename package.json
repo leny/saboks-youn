@@ -1,0 +1,12 @@
+{
+  "name": "saboks-youn",
+  "version": "0.0.1",
+  "description": "Just a sandbox to test something",
+  "repository": "https://github.com/leny/saboks-youn",
+  "author": "leny <info@flatland.be>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}
