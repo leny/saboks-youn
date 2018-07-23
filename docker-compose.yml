@@ -1,0 +1,22 @@
+version: "3"
+services:
+    sender:
+        image: node
+        working_dir: /home/node/app
+        volumes:
+            - ./:/home/node/app
+        command: "npm run sender"
+        depends_on:
+            - redis
+
+    listener:
+        image: node
+        working_dir: /home/node/app
+        volumes:
+            - ./:/home/node/app
+        command: "npm run listener"
+        depends_on:
+            - redis
+
+    redis:
+        image: redis
